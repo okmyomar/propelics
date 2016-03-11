@@ -1,0 +1,45 @@
+/*
+* === Full Application styles ===
+*/
+
+/*
+* --- Simple css reset ---
+*/
+html, body {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+/*
+* --- Section full window height ---
+*/
+.full-element {
+    height:100vh;
+}
+
+/*
+* --- Sections base colors ---
+*/
+section.orange {
+    background-color: #ea5c35;
+}
+
+section.gray {
+    background-color: #363C44;
+}
+
+section.blue {
+    background-color: #5c82ff;
+}
+
+section.green {
+    background-color: #9dff5c;
+}
+
+section.melon {
+    background-color: #ff996e;
+}
+
+section.purple {
+    background-color: #750071;
+}
