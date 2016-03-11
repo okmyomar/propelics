@@ -10,12 +10,13 @@
 </head>
 <body>
     <div id="main">
-        <section id="" class="full-element orange">
+
+        <section id="vowel-counter" class="full-element orange">
             hello there
         </section>
-        <section id="first" class="full-element green">
-            <div class="class sample-container">
 
+        <section id="first" class="full-element green">
+            <div class="sample-container">
                 <div class="smaple-box">
                     <form action="">
                         <div class="form-group">
@@ -28,6 +29,35 @@
                             <input type="text" class="form-control" id="output-vowels" readonly="true">
                         </div>
                         <button id="vowel-trigger" type="button" class="btn btn-default pull-right">Test!</button>
+                    </form>
+                </div>
+
+                <div class="description-box">
+                    <p class="description">
+                    A function that receives a String parameter and returns how many vowels that string has.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="dates-difference">
+            <div class="sample-container">
+                <div class="smaple-box">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="base-date">Base Date</label>
+                            <input type="date" id="base-date" name="base-date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="future-date">Future Date</label>
+                            <input type="date" id="future-date" name="future-date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="minutes-difference">Difference in minutes</label>
+                            <input type="text" id="minutes-difference" class="form-control">
+                        </div>
+
+                        <button id="minutes-trigger" type="button" class="btn btn-default pull-right">Show difference!</button>
                     </form>
                 </div>
 
