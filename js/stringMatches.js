@@ -20,26 +20,29 @@ function repeteadChrats(baseVal, valToCompare) {
   var i = 0;
   var j = 0;
 
-  while (i <= baseArray.length) {
+  while (i < baseArray.length) {
     currentBaseVal = baseArray[i];
 
     if (currentBaseVal === undefined) break;
 
-    while (j <= toCompareArray.length) {
+    while (j < toCompareArray.length) {
       currentToCompareVal = toCompareArray[j];
 
       if (currentBaseVal === undefined || currentToCompareVal === undefined) break;
 
       if (currentBaseVal > currentToCompareVal) {
-        j++;
+        j++; continue;
       } else if (currentBaseVal < currentToCompareVal) {
-        i++; currentBaseVal = baseArray[i];
+        i++; currentBaseVal = baseArray[i]; continue;
       } else if (currentBaseVal === currentToCompareVal) {
         matchValues.push(currentBaseVal);
         i++; currentBaseVal = baseArray[i];
         j++;
+        continue;
       };
     }
+
+    i++;
   }
 
   document.getElementById('string-matches').value = matchValues;
@@ -48,6 +51,11 @@ function repeteadChrats(baseVal, valToCompare) {
 function getValues() {
   var baseVal = document.getElementById('base-string').value;
   var valToCompare = document.getElementById('tocompare-string').value;
+
+  if(baseVal.trim() === valToCompare.trim()) {
+    document.getElementById('string-matches').value = 'Values can\'t be repeated';
+    return;
+  }
 
   repeteadChrats(baseVal, valToCompare);
 }
