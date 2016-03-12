@@ -11,14 +11,18 @@
 <body>
     <div id="main">
 
-        <section id="presentation" class="full-element orange">
-            <p>Omar arguelles arreola</p>
+        <section id="presentation" class="full-element">
+            <div id="presentation-container">
+                <h1 class="orange-text">Omar Arguelles Arreola</h1>
+                <img id="propelics-img" src="images/propelics.jpg" alt="">
+                <h3 class="black-text">-- JS Test --</h3>
+            </div>
         </section>
 
         <!-- SECTION 1 -->
-        <section id="first" class="full-element gray">
-            <div class="sample-container">
-                <div class="smaple-box">
+        <section id="first" class="full-element green">
+            <div class="sample-container row">
+                <div class="smaple-box col-sm-6 col-sm-6">
                     <form action="">
                         <div class="form-group">
                             <label for="input-vowels">Enter a string</label>
@@ -33,7 +37,7 @@
                     </form>
                 </div>
 
-                <div class="description-box">
+                <div class="description-box col-sm-6 col-sm-6">
                     <p class="description">
                     A function that receives a String parameter and returns how many vowels that string has.
                     </p>
@@ -43,8 +47,8 @@
 
         <!-- SECTION 2 -->
         <section id="dates-difference" class="full-element blue">
-            <div class="sample-container">
-                <div class="smaple-box">
+            <div class="sample-container row">
+                <div class="smaple-box col-sm-6">
                     <form action="">
                         <div class="form-group">
                             <label for="base-date">Base Date</label>
@@ -63,34 +67,33 @@
                     </form>
                 </div>
 
-                <div class="description-box">
+                <div class="description-box col-sm-6">
                     <p class="description">
-                    A function that receives a String parameter and returns how many vowels that string has.
+                    A function that receives 2 Date parameters and returns the time difference in minutes.
                     </p>
                 </div>
             </div>
         </section>
 
         <!-- SECTION 3 -->
-        <section id="object-transformation" class="full-element blue">
-            <div class="sample-container">
-               <div class="sample-box">
+        <section id="object-transformation" class="full-element orange">
+            <div class="sample-container row">
+               <div class="sample-box col-sm-6">
                    <form action="">
-                        <div class="smaple-box">
                         <div class="form-group">
                             <label for="random-object">Random object created</label>
-                            <textarea name="random-object" id="random-object" cols="30" rows="5" class="form-control" readonly="true"></textarea>
+                            <textarea name="random-object" id="random-object" cols="30" rows="8" class="form-control" readonly="true"></textarea>
                         </div>
 
                         <div class="form-group">
                             <label for="random-object">Array result</label>
-                            <textarea name="array-result" id="array-result" cols="30" rows="5" class="form-control" readonly="true"></textarea>
+                            <textarea name="array-result" id="array-result" cols="30" rows="8" class="form-control" readonly="true"></textarea>
                         </div>
 
                         <button id="create-object" type="button" class="btn btn-default pull-right">create object!</button>
                     </form>
                 </div>
-                <div class="description-box">
+                <div class="description-box col-sm-6">
                     <p class="description">
                     Write a function that receives 1 Object parameter that can contain strings, boolean, integer, undefined and null values. It should create and return an array of 3 key-value objects. The first include all strings and integer key values, the second all boolean key values and last one all the null key values
                     </p>
@@ -98,10 +101,30 @@
             </div>
         </section>
 
+        <!-- SECTION 4 -->
+        <section id="calculator" class="full-element green">
+            <div class="sample-container row">
+                <div class="sample-box col-sm-6">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="input-calculator">Input: </label>
+                            <input type="text" name="input-calculator" id="input-calculator" class="form-control">
+                        </div>
+                        <button id="calculator-trigger" type="button" class="btn btn-default pull-right">Solve it!</button>
+                    </form>
+                </div>
+                <div class="description-box col-sm-6">
+                    <p class="description">
+                     Write a calculator which evaluates expressions with decimal numbers and the operators + , - , * , / and prints the result on the screen (don't use eval() ). No user input for this is needed, instead you will give a string with the operation as an input i.e. if it receives 5+4-2 the result printed on screen is 7 .
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <!-- SECTION 5 -->
         <section id="strings-match" class="full-element melon">
-            <div class="sample-container">
-                <div class="smaple-box">
+            <div class="sample-container row">
+                <div class="smaple-box col-sm-6">
                     <form action="">
                         <div class="form-group">
                             <label for="base-string">Enter first string</label>
@@ -120,9 +143,9 @@
                     </form>
                 </div>
 
-                <div class="description-box">
+                <div class="description-box col-sm-6">
                     <p class="description">
-
+                    Given 2 strings of unknown characters (but it can't be repeated) create a function that returns an array of the characters that are repeated in both strings in the most efficient way.
                     </p>
                 </div>
             </div>
@@ -130,8 +153,8 @@
 
         <!-- SECTION 6 -->
         <section id="strings-match" class="full-element purple">
-            <div class="sample-container">
-                <div class="smaple-box">
+            <div class="sample-container row">
+                <div class="smaple-box col-sm-6">
                     <h2>My favorite movies!</h1>
                     <ul id="movies-list"></ul>
                     <select class="form-control form-group" id="movie-topic">
@@ -146,7 +169,7 @@
                     <button id="movies-trigger" type="button" class="btn btn-default pull-right">List movies!</button>
                 </div>
 
-                <div class="description-box">
+                <div class="description-box col-sm-6">
                     <p class="description">
                     Create an array of objects (fill it with at least 10 elements) in which each object represents a movie . Each movie can have a title (String), starring (Array of Strings), isFavorite (Boolean) and Score (Number, can have decimals) properties
                     </p>
@@ -156,13 +179,13 @@
 
         <!-- SECTION 7 -->
         <section id="strings-match" class="full-element orange">
-            <div class="sample-container">
-                <div class="smaple-box">
+            <div class="sample-container row">
+                <div class="smaple-box col-sm-6">
                     <p>Gregory-Leibniz function:</p>
                     <input type="text" id="sum-result" class="form-control">
                 </div>
 
-                <div class="description-box">
+                <div class="description-box col-sm-6">
                     <p class="description">
                     Write a program that computes:
                     <img src="images/sum.png" alt="">
@@ -173,8 +196,8 @@
 
         <!-- SECTION 8 -->
         <section id="strings-match" class="full-element blue">
-            <div class="sample-container">
-                <div class="smaple-box">
+            <div class="sample-container row">
+                <div class="smaple-box col-sm-6">
                     <p>Palindrome function<p>
                     <form action="">
                         <div class="form-group">
@@ -189,10 +212,9 @@
                     </form>
                 </div>
 
-                <div class="description-box">
+                <div class="description-box col-sm-6">
                     <p class="description">
-                    Write a program that computes:
-                    <img src="images/sum.png" alt="">
+                    Write a function that tests whether a string is a palindrome.
                     </p>
                 </div>
             </div>
@@ -200,13 +222,50 @@
 
         <!-- SECTION 9 -->
         <section id="strings-match" class="full-element melon">
-            <div class="sample-container">
-                <div class="smaple-box">
+            <div class="sample-container row">
+                <div class="smaple-box col-sm-6">
                     <p>List of next 20 leap yers is:</p>
                     <div id="leap-years"></div>
                 </div>
 
-                <div class="description-box">
+                <div class="description-box col-sm-6">
+                    <p class="description">
+                    Write a function that prints the next 20 leap years.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 10 -->
+        <section id="strings-match" class="full-element green">
+            <div class="sample-container row">
+                <div class="smaple-box col-sm-6">
+                    <form action="">
+                        <p>Add a string per input</p>
+                        <div class="form-group">
+                            <input type="text" class="form-control strings-user" placeholder="just wrihte!">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control strings-user" placeholder="just wrihte!">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control strings-user" placeholder="just wrihte!">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control strings-user" placeholder="just wrihte!">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control strings-user" placeholder="just wrihte!">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" id="string-user-box" cols="30" rows="6"></textarea>
+                        </div>
+                        <button type="button" id="strings-user-trigger">Show it!</button>
+
+                    </form>
+                </div>
+
+                <div class="description-box col-sm-6">
                     <p class="description">
                     Write a function that prints the next 20 leap years.
                     </p>
@@ -219,14 +278,21 @@
     <script src="js/vowels.js"></script>
     <script src="js/dates.js"></script>
     <script src="js/objectTransformation.js"></script>
+    <script src="js/calculator.js"></script>
     <script src="js/stringMatches.js"></script>
     <script src="js/movies.js"></script>
     <script src="js/sum.js"></script>
     <script src="js/palindrome.js"></script>
     <script src="js/leapYears.js"></script>
+    <script src="js/stringsPerLine.js"></script>
     <script>
-      window.onload = sum;
-      window.onload = showNextLeapYears;
+
+      function start() {
+        sum();
+        showNextLeapYears();
+      }
+
+      window.onload = start;
     </script>
 </body>
 </html>

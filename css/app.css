@@ -19,17 +19,42 @@ html, body {
 */
 .full-element {
     height:100vh;
+    padding: 20px 20px;
 }
+
+.orange-text {
+  color: #ea5c35;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+
+.black-text {
+  color: #111;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#propelics-img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.description {
+  color: #111;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 26px;
+}
+
 
 /*
 * --- Sections base colors ---
 */
 section.orange {
     background-color: #ea5c35;
-}
-
-section.gray {
-    background-color: #363C44;
 }
 
 section.blue {
@@ -45,5 +70,10 @@ section.melon {
 }
 
 section.purple {
-    background-color: #750071;
+    background-color: #BFB0D4;
+}
+
+
+#leap-years {
+  word-break: break-all;
 }
