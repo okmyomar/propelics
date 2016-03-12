@@ -14,4 +14,3 @@ function sum(argument) {
 
   document.getElementById('sum-result').value = (4 * result);
 }
-
