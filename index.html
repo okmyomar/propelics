@@ -79,12 +79,12 @@
                         <div class="smaple-box">
                         <div class="form-group">
                             <label for="random-object">Random object created</label>
-                            <textarea name="random-object" id="random-object" cols="30" rows="10" class="form-control" readonly="true"></textarea>
+                            <textarea name="random-object" id="random-object" cols="30" rows="5" class="form-control" readonly="true"></textarea>
                         </div>
 
                         <div class="form-group">
                             <label for="random-object">Array result</label>
-                            <textarea name="array-result" id="array-result" cols="30" rows="10" class="form-control" readonly="true"></textarea>
+                            <textarea name="array-result" id="array-result" cols="30" rows="5" class="form-control" readonly="true"></textarea>
                         </div>
 
                         <button id="create-object" type="button" class="btn btn-default pull-right">create object!</button>
@@ -97,13 +97,44 @@
                 </div>
             </div>
         </section>
-  </div>
 
-  <script src="js/vowels.js"></script>
-  <script src="js/dates.js"></script>
-  <script src="js/objectTransformation.js"></script>
-  <script>
+        <!-- SECTION 4 -->
+        <section id="strings-match" class="full-element melon">
+            <div class="sample-container">
+                <div class="smaple-box">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="base-string">Enter first string</label>
+                            <input type="text" class="form-control" id="base-string">
+                        </div>
+                        <div class="form-group">
+                            <label for="tocompare-string">Enter second string</label>
+                            <input type="text" class="form-control" id="tocompare-string">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="string-matches">Result!</label>
+                            <input type="text" class="form-control" id="string-matches" readonly="true">
+                        </div>
+                        <button id="matches-trigger" type="button" class="btn btn-default pull-right">Show matches!</button>
+                    </form>
+                </div>
+
+                <div class="description-box">
+                    <p class="description">
+                    A function that receives a String parameter and returns how many vowels that string has.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/vowels.js"></script>
+    <script src="js/dates.js"></script>
+    <script src="js/objectTransformation.js"></script>
+    <script src="js/stringMatches.js"></script>
+    <script>
       window.onload = function() {};
-  </script>
+    </script>
 </body>
 </html>
