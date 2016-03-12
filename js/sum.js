@@ -1,3 +1,6 @@
+/*
+*  Write a program that computes: Gregory-Leibniz sum.
+*/
 
 function sum(argument) {
   var k = 1;

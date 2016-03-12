@@ -6,8 +6,6 @@
 * Notes:
 *   * In javascript there is not a type known as "integer" so we are taking all number values as integer,
 *     in javascript all number values ar float point values.
-*
-*   * All undefined values are intentionally ignored because of the description.
 */
 
 /*
@@ -58,7 +56,7 @@ function createRandomName() {
 }
 
 /*
-* Creates and fill a simple object with all kind of primitives: number, string, boolean, null and undefined,
+* Creates and fills a simple object with all kind of primitives: number, string, boolean, null and undefined,
 * the filling process is totally by random created values, the goal is only separate that kind of primitives
 * in a second function by groups and return an array with those groups.
 */
